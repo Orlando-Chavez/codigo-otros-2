@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirma tu asistencia:</h2>
+
+  <form class="formulario">
+    <!--Agregue label y lo vincule al input name y agregue atributo "required-->
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+    <br />
+
+    <!--Agregue label y lo vincule al input age, y agregue atributo "required"-->
+    <label for="age">Edad</label>
+    <input type="number" name="age" id="age" placeholder="Ingresa tu edad" required>
+    <br />
+
+    <select name="nationality" id="nationality" required>
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br />
+
+    <input type="submit">
+  </form>
+  
+  <div id="lista-de-invitados">
+  <h2>Lista de invitados</h2>
+  </div>
+
+
+  <script src="formulario.js"></script>
+</body>
+</html>
+
+
+<!--Una vez que tengas los archivos necesarios en tu Visual Studio Code:
+
+Lee con atención el código y analiza el proyecto para entender su funcionamiento. Pon mucha atención, pues el código contiene algunos errores.
+Ten a consideración que el programa debe hacer lo siguiente: 
+Esta aplicación crea una lista de invitados.
+Los invitados pueden ser agregados a través de un formulario.
+Se pueden borrar invitados de la lista usando el botón.
+Basado en lo anterio, corrige los elementos necesarios para:
+Mejorar la legibilidad
+Que el código funcione
+Optimizar el código
+No olvides document-->
